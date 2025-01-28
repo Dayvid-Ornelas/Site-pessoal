@@ -4,6 +4,8 @@
     --Vermelho: #ff0000;
     --Preto: #1a1a1a;
     --Verde: #4d533c;
+    --Vermelho-agencia: #cb0000;
+    --Roxo-editora: #800080;
 }
 
 *{
@@ -105,12 +107,83 @@ section.sobre > a:hover{
 
 .sobre-img{
     width: 40%;
-    padding: 10px 20px;
 }
 
 .sobre-img img{
     max-width: 100%;
-    width: 100%;
+    width: 80%;
+    border-radius: 20px;
+}
+
+section.faq{
+    padding: 50px 0;
+}
+
+#title{
+    width: 410px;
+    height: 42px;
+    margin: 0 auto;
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    border-bottom: 2px solid var(--Vermelho);
+}
+
+.cen{
+    display: flex;
+    justify-content: center;
+}
+
+.box-faq{
+    margin: 0px 18px;
+    margin-top: 80px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: white;
+    width: 30%;
+    min-height: 300px;
+    padding: 30px 30px;
+}
+
+#agencia{
+    box-shadow: 0px 0px 10px 5px var(--Vermelho-agencia);
+}
+
+#canal{
+    box-shadow: 0px 0px 10px 5px var(--Vermelho);
+}
+
+#editora{
+    box-shadow: 0px 0px 10px 5px var(--Roxo-editora);
+}
+
+.box-faq h2{
+    font-size: 23px;
+    padding: 10px 0;
+}
+
+.box-faq p{
+    font-size: 15px;
+    text-align: justify;
+    color: var(--Verde);
+}
+
+.box-faq a{
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 17px;
+    text-decoration: none;
+    background-color: var(--Vermelho);
+    color: white;
+    padding: 13px 16px;
+    border-radius: 8px;
+}
+
+.box-faq a:hover{
+    scale: 1.1;
+    transition: 0.45s;
 }
 
 section.trabalhos{
@@ -181,37 +254,6 @@ section.trabalhos > h2{
 
 .box-depoimentos-nome{
     padding: 8px 10px;
-}
-
-section.faq{
-    padding: 50px 0;
-    border-top: 1px solid #ccc;
-}
-
-.faq h2{
-    text-align: center;
-}
-
-.box-faq{
-    margin: 30px 0;
-    border-radius: 4px;
-    box-shadow: 50px 50px 100px 0 rgba(0, 0, 0, 0.15);
-    background-color: white;
-    float: left;
-    width: 22%;
-    min-height: 250px;
-    margin-right: 3%;
-    padding: 30px 30px;
-}
-
-.box-faq h2{
-    font-size: 24px;
-    padding: 10px 0;
-}
-
-.box-faq p{
-    font-size: 14px;
-    color: rgb(33, 56, 66, 0.6);
 }
 
 section.contato{
@@ -291,13 +333,36 @@ footer{
     color: white;
 }
 
+@media screen and (max-width: 1024px){    
+    .sobre-img img{
+        width: 100%;
+        padding: 20px;
+        border-radius: 40px;
+    }
+    .box-faq{
+        width: 50%;
+        margin-right: 20px;
+    }
+}
+
 @media screen and (max-width: 768px){
+    .apresentacao{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .descricao{
+        width: 80%;
+    }
+    .sobre-img{
+        width: 50%;
+    }
     .trabalho-img,
     .wraper-descricao{
         width: 100%;
     }
     .box-faq{
-        width: 100%;
+        width: 70%;
         margin-right: 0;
     }
     .numeros-contato,
