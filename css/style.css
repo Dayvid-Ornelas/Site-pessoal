@@ -113,6 +113,7 @@ section.sobre > a:hover{
     max-width: 100%;
     width: 80%;
     border-radius: 20px;
+    margin-left: 40px;
 }
 
 section.faq{
@@ -186,36 +187,85 @@ section.faq{
     transition: 0.45s;
 }
 
-section.trabalhos{
+section.projetos{
     padding: 40px 0;
 }
 
-section.trabalhos > h2{
+section.projetos > h2{
     text-align: center;
     color: black;
     font-size: 30px;
 }
 
-.trabalho-single{
+.projeto-single{
     display: flex;
-    padding: 40px 0;
     flex-wrap: wrap;
+    margin: 40px 0;
+    box-shadow: 26px 26px 50px 0 rgba(0, 0, 0, 0.15);
 }
 
-.trabalho-img{
+.projeto-img{
     width: 50%;
     padding: 50px;
     background-color: var(--Vermelho);
 }
 
-.trabalho-img img{
+.projeto-img img{
     max-width: 100%;
     width: 100%;
 }
 
-.wraper-descricao{
+.projeto-descricao{
     width: 50%;
-    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#proj{
+    box-shadow: -26px 26px 50px 0 rgba(0, 0, 0, 0.15);
+}
+
+#proj1{
+    width: 280px;
+    text-align: center;
+    border-bottom: 2px solid var(--Vermelho);
+    margin: 15px; 
+    font-size: 30px;
+}  
+
+#proj2{
+    width: 180px;
+    text-align: center;
+    border-bottom: 2px solid var(--Vermelho);
+    margin: 15px; 
+    font-size: 30px;
+}  
+
+.projeto-descricao p{
+    width: 80%;
+    color: var(--Verde);
+    font-size: 19px;
+    text-align: justify;
+}
+
+.projeto-descricao a{
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 17px;
+    text-decoration: none;
+    background-color: var(--Vermelho);
+    color: white;
+    padding: 13px 16px;
+    border-radius: 8px;
+}
+
+.projeto-descricao a:hover{
+    scale: 1.1;
+    transition: 0.45s;
 }
 
 .box-depoimentos{
@@ -356,6 +406,9 @@ footer{
     }
     .sobre-img{
         width: 50%;
+    }
+    .sobre-img img{
+        margin-left: 0px;
     }
     .trabalho-img,
     .wraper-descricao{
