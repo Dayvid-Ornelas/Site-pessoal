@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <script src="js/slick.min.js"></script>
     <title>Dayvid Ornelas</title>
 </head>
 <body>
@@ -85,10 +89,41 @@
                     <img src="images/mockup-macbook.png" alt="imagem projeto">
                 </div>
             </div>
+            <div class="chamado-git">
+                <h3>Entre no meu Git Hub e veja outros projetos meus!</h3>
+                <a href="#">Ver Git Hub!</a>
+            </div>
         </div>
     </section>
 
-    
+
+    <section class="certificados">
+        <h2>Certificados</h2>
+        <div class="center">
+            <div class="slider-box">
+                <div class="informacoes-certificados">
+                    <embed src="pdf/Certificado Curso Agência Web.pdf" type="application/pdf">
+                    <p>Certificado do meu curso de Agência Web feito na Danki Code</p>
+                </div>
+                <div class="informacoes-certificados">
+                    <embed src="pdf/Certificado Curso Agência Web.pdf" type="application/pdf">
+                    <p>Certificado do meu curso de Agência Web feito na Danki Code</p>
+                </div>
+                <div class="informacoes-certificados">
+                    <embed src="pdf/Certificado Curso Agência Web.pdf" type="application/pdf">
+                    <p>Certificado do meu curso de Agência Web feito na Danki Code</p>
+                </div>
+                <div class="informacoes-certificados">
+                    <embed src="pdf/Certificado Curso Agência Web.pdf" type="application/pdf">
+                    <p>Certificado do meu curso de Agência Web feito na Danki Code</p>
+                </div>
+                <div class="informacoes-certificados">
+                    <embed src="pdf/Certificado Curso Agência Web.pdf" type="application/pdf">
+                    <p>Certificado do meu curso de Agência Web feito na Danki Code</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class="contato">
         <h2>Entre em Contato</h2>
@@ -97,11 +132,11 @@
                 <h3>Telefone:</h3>
                 <p>(31) 99462-9338</p>
                 <br>
-                <h3>Telefone:</h3>
-                <p>(31) 99462-9338</p>
+                <h3>Email:</h3>
+                <p>dayvidcristhian19@gmail.com</p>
                 <br>
-                <h3>Telefone:</h3>
-                <p>(31) 99462-9338</p>
+                <h3>Endereço:</h3>
+                <p>Rua Pau Brasil, 200, Floresta - Coronel Fabriciano - MG</p>
             </div>
             <div class="form">
                 <form>
@@ -121,7 +156,40 @@
         </div>
     </section>
     <footer>
-        <p>Todos os Direitos Reservados.</p>
+        <p>&copy; Todos os Direitos Reservados.</p>
     </footer>
+
+    <script type="text/javascript">
+        /*('section.clientes-slider .slider-container').slick({
+            dots: true,
+            arrows: false,
+            infinite: false,
+            centerMode: false,
+            speed:1000,
+            slidesToShow: 4,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            pauseOnHover: false,
+            responsive:
+            [
+                {
+                    breakpoint: 768,
+                    settings:{
+                        slidesToShow: 2
+                    }
+                }
+            ]
+        })*/
+        $('section.certificados .slider-box').slick({
+            dots: true,
+            arrows: false,
+            infinite: true,
+            centerMode: false,
+            speed:1000,
+            slidesToShow: 1,
+            autoplay: true,
+            autoplaySpeed: 5000
+        })
+    </script>
 </body>
 </html>
