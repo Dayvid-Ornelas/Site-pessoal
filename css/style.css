@@ -15,6 +15,10 @@
     font-family: "Poppins", serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .center{
     display: flex;
     flex-wrap: wrap;
@@ -286,10 +290,10 @@ section.projetos > h2{
 
 .chamado-git a{
     display: block;
-    width: 150px;
+    width: 200px;
     margin: 15px auto;
     text-align: center;
-    font-size: 17px;
+    font-size: 20px;
     text-decoration: none;
     background-color: var(--Vermelho);
     color: white;
@@ -300,6 +304,11 @@ section.projetos > h2{
 .chamado-git a:hover{
     scale: 1.1;
     transition: 0.45s;
+}
+
+.icon-github{
+    font-size: 20px;
+    margin-right: 5px;
 }
 
 /****SLICK SLIDER****/
@@ -397,7 +406,13 @@ section.contato .center{
 
 section.contato > h2{
     text-align: center;
-    color: #1b1b1b;
+    width: 320px;
+    margin: 10px auto;
+    align-items: center;
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    border-bottom: 2px solid var(--Vermelho);
 }
 
 .numeros-contato{
@@ -406,14 +421,13 @@ section.contato > h2{
 }
 
 .numeros-contato h3{
-    color: #d6d6d6;
+    color: var(--Vermelho);
     font-size: 25px;
 }
 
 .numeros-contato p{
-    color: rgb(33, 56, 66, 0.6);
+    color: var(--Verde);
     font-size: 16px;
-    text-decoration: underline;
 }
 
 .form{
@@ -424,14 +438,14 @@ section.contato > h2{
 .form p{
     font-size: 14px;
     font-weight: bold;
-    color:rgb(33, 56, 66, 0.6);
+    color:var(--Verde);
 }
 
 .form input[type="text"]{
     width: 100%;
     height: 40px;
     border-radius: 4px;
-    box-shadow: 10px 10px 50px 0 rgba(0, 0, 0, 0.8);
+    box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.8);
     border: solid 1px #ededed;
     background-color: white;
 }
@@ -440,7 +454,7 @@ section.contato > h2{
     width: 100%;
     height: 100px;
     border-radius: 4px;
-    box-shadow: 10px 10px 50px 0 rgba(0, 0, 0, 0.8);
+    box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.8);
     border: solid 1px #ededed;
     background-color: white;
 }
@@ -461,6 +475,64 @@ footer{
     background-color: var(--Preto);
     color: white;
 }
+
+.icons-menu{
+    margin: 10px;
+    cursor: pointer;
+}
+
+.icons-menu a{
+    text-decoration: none;
+    color: var(--Cinza);
+    font-size: 25px;
+    margin: 0 10px;
+}
+
+.icon-facebook-sign:hover{
+    color: blue;
+    transition: 0.5s;
+}
+
+.icon-instagram:hover{
+    background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: 0.5s;
+}
+
+.icon-linkedin-sign:hover{
+    color: #0a66c2;
+    transition: 0.5s;
+}
+
+.icon-twitter:hover{
+    color: #1DA1F2;
+    transition: 0.5s;
+}
+
+/*Página Obrigado*/
+
+.obrigado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.obrigado h1{
+    color: var(--Vermelho);
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.obrigado p{
+    color: var(--Verde);
+    font-size: 25px;
+}
+
 
 @media screen and (max-width: 1024px){    
     .sobre-img img{
