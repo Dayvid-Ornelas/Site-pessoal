@@ -160,6 +160,7 @@ section.faq{
 
 #editora{
     box-shadow: 0px 0px 10px 5px var(--Roxo-editora);
+    display: none;
 }
 
 .box-faq h2{
